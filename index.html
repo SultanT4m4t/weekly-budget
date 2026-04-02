@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weekly Income Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Weekly Income Tracker</h1>
+  </header>
+
+  <main>
+    <section id="form-section">
+      <form id="entry-form">
+        <input type="date" id="date" required />
+        <input type="number" id="amount" step="0.01" placeholder="e.g. 150.00" required />
+        <button type="submit">Add Entry</button>
+      </form>
+      <div id="error-message"></div>
+    </section>
+
+    <section id="weekly-summary">
+      <h2>Weekly Summary</h2>
+      <div id="weekly-data">No data yet</div>
+    </section>
+
+    <section id="entries">
+      <h2>Entries</h2>
+      <div id="entries-list">No entries yet</div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
