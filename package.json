@@ -1,1 +1,5 @@
-npm install @supabase/supabase-js --save
+{
+  "dependencies": {
+    "@supabase/supabase-js": "^2.101.1"
+  }
+}
